@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: #121212;
+}
+
+
+@keyframes circulo {
+    0% {
+      propriedade: valor1;
+    }
+    50% {
+      propriedade: valor2;
+    }
+    100% {
+      propriedade: valor3;
+    }
+  }
+  
+
+.navegation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: #121212;
+    gap: 70px;
+    background: transparent;
+}
+
+.button{
+    display: flex;
+    gap: 40px;
+}
+
+.button a{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  width: 100%;
+  height: auto;
+  padding: 200px;
+  gap: 100px;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  width: 50vw;  
+  height: 50vw;  
+  max-width: 300px;
+  max-height: 300px;
+  background: radial-gradient(circle, 
+      rgba(255,  213,  0, 0.8) 20%, 
+      rgba(  24,  53,  83, 0.6) 40%, 
+      rgba(128, 0, 128, 0.5) 60%, 
+      rgba(255,  213,  0, 0.8) 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(60px);
+  z-index: -1;
+  animation: circulo 5s infinite alternate ease-in-out;
+}
+
+.title-banner{
+    color: white;
+    font-size: 25px;   
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-align: center;
+}
+
+.button-banner{
+  background-color: white;
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  align-content: center;
+
+
+}
+
+.button-banner a{
+  font-size: 25px;
+  color: #121212;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;
+
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  margin-top: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #B0B0B0;
+  border: 1px solid #B0B0B0;
+  transition: .4s;
+  border-radius: 32px;
+  outline: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  outline: 2px solid #B0B0B0;
+  left: -1px;
+  bottom: -1px;
+  background-color: #fff;
+  transition: transform .25s ease-in-out 0s;
+}
+
+.slider-icon {
+  opacity: 0;
+  height: 12px;
+  width: 12px;
+  stroke-width: 8;
+  position: absolute;
+  z-index: 999;
+  stroke: #222222;
+  right: 60%;
+  top: 30%;
+  transition: right ease-in-out .3s, opacity ease-in-out .15s;
+}
+
+input:checked + .slider {
+  background-color: #222222;
+}
+
+input:checked + .slider .slider-icon {
+  opacity: 1;
+  right: 20%;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+  outline-color: #181818;
+}
+
+
+
+/* Estilos para a versão branca */
+.light-mode {
+    background: #FFFFFF;
+    color: #121212;
+}
+
+
+.light-mode .invert {
+  filter: invert(100%) brightness(100%) contrast(100%);
+}
+
+
+/* Ajuste para a navegação */
+.light-mode .navegation {
+    background-color: transparent;
+}
+
+/* Ajuste dos botões */
+.light-mode .button a {
+    color: #121212;
+}
+
+/* Ajuste da banner */
+.light-mode .banner {
+    background: #ffffff;
+}
+
+/* Ajuste do efeito neon no modo claro */
+/* Este estilo só será ativado se a classe .light-mode estiver presente */
+.light-mode .banner::after {
+  content: "";
+  position: absolute;
+  width: 50vw;  
+  height: 50vw;  
+  max-width: 300px;
+  max-height: 300px;
+  background: radial-gradient(circle, 
+      rgba(248, 207, 0, 0) 20%, 
+      rgba(24, 53, 83, 0.6) 40%, 
+      rgba(128, 0, 128, 0.5) 60%, 
+      rgba(255, 213, 0, 0.8) 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(60px);
+  z-index: -1;
+  animation: circulo 5s infinite alternate ease-in-out;
+  /* Adicionando !important para garantir que o estilo seja aplicado */
+  filter: blur(60px) !important;
+}
+
+
+/* Ajuste para os textos */
+.light-mode .title-banner {
+    color: #121212;
+}
+
+/* Ajuste para o botão da banner */
+.light-mode .button-banner {
+    background-color: #121212;
+}
+
+.light-mode .button-banner a {
+    color: white;
+}
+
+/* Ajuste para o switch */
+.light-mode .slider {
+    background-color: #222222;
+    border: 1px solid #222222;
+}
+
+.light-mode .slider:before {
+    background-color: #121212;
+}
+
+.light-mode input:checked + .slider {
+    background-color: #B0B0B0;
+}
+
+.light-mode input:checked + .slider:before {
+    outline-color: #B0B0B0;
+}
