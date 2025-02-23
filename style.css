@@ -295,6 +295,13 @@ input:checked + .slider:before {
 
 }
 
+.app{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
 
 .light-mode {
     background: #FFFFFF;
