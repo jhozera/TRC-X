@@ -333,6 +333,52 @@ input:checked + .slider:before {
   width: 80%;
 }
 
+.debito{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242424;
+  height: auto;
+  padding: 100px;
+  gap: 50px;
+
+}
+
+.debito-ic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.tt{
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+}
+
+.debito-tt img{
+  width: 10%;
+}
+
+.debito-tt p{
+  font-size: 20px;
+  color: white;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+}
+
+
+
+.debito-title{
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+}
+
 .light-mode {
     background: #FFFFFF;
     color: #121212;
