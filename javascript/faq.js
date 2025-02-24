@@ -1,12 +1,13 @@
-function toggleContent() {
-    var content = document.getElementById("hiddenContent");
-    var button = document.querySelector(".toggle-button");
-
-    if (content.style.display === "none" || content.style.display === "") {
+function showContente(id) {
+    const content = document.getElementById(id);
+    const isVisible = content.style.display === "block";
+  
+    const allContents = document.querySelectorAll('.bt-content');
+    allContents.forEach(el => el.style.display = 'none');
+  
+    if (!isVisible) {
         content.style.display = "block";
-        button.textContent = "Mostrar Menos";
     } else {
         content.style.display = "none";
-        button.textContent = "Mostrar Mais";
     }
-}
+  }

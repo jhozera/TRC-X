@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: #121212;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-section {
+    width: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-align: center;
+}
+
+.right-section {
+    width: 50%;
+    background-color: #1F1F1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.formulario {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-align: left;
+    max-width: 400px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.input-cpf {
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background-color: #242424;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.label-input {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.80);
+    background-color: #242424;
+    padding: 2px 5px;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.input-cpf:focus + .label-input,
+.input-cpf:not(:placeholder-shown) + .label-input {
+    top: 8px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.button-continuar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 56px;
+    padding: 18px 32px;
+    border-radius: 16px;
+    background: #FBFBFB;
+    color: #242424;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+
+.button-continuar:hover {
+    background: #f39c12;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #1F1F1F;
+}
+
+.logo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-container img {
+    height: 70px; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        height: 50vh;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .formulario {
+        text-align: center;
+    }
+
+    .button-continuar {
+        width: 180px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
