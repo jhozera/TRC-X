@@ -140,6 +140,22 @@ body {
   height: 0;
 }
 
+.switcha {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  margin-top: 20px;
+}
+
+.switcha input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -577,8 +593,6 @@ footer {
 }
 
 
-
-
 .content {
   max-width: 600px;
   margin: auto;
@@ -763,16 +777,167 @@ footer {
 }
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px)  {
 
   .navigation-mobile{
     display: none;
+  }
+
+  .canais-gt{
+    flex-wrap: wrap;
   }
 
 }
 
 
 @media  (min-width: 769px) and (max-width:1024px){
+  .canais-gt{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .button-pt{
+    height: auto;
+    width: 350px;
+  }
+
+  .debito-ic{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-fundo{
+    flex-direction: column;
+  }
+
+  .button-pr{
+    flex-direction: column;
+  }
+
+  .navegation{
+    display: none;
+  }
+
+  .acordos-ic{
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .cartoes{
+    flex-direction: column;
+  }
+
+  .img-nav img{
+    width: 35%;
+    padding: 10px;
+
+  }
+
+  .banner{
+    padding: 50px;
+  }
+
+  #button-mobile{
+    margin-top: -10px;
+  }
+
+  .corpo-imagem {
+    flex-direction: column;
+  }
+
+  .corpo-imagem img{
+    width: 300px;
+  }
+
+  .cartoes-img{
+    width: 300px;
+  }
+
+  .app-img img{
+    width: 300px;
+  }
+
+  .app-text{
+    padding: 25px;
+  }
+
+   .canais-gt{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .button-pt{
+    height: auto;
+    width: 350px;
+  }
+
+  .debito-ic{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-fundo{
+    flex-direction: column;
+  }
+
+  .button-pr{
+    flex-direction: column;
+  }
+
+  .navegation{
+    display: none;
+  }
+
+  .acordos-ic{
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .cartoes{
+    flex-direction: column;
+  }
+
+  .img-nav img{
+    width: 35%;
+    padding: 10px;
+
+  }
+
+  .banner{
+    padding: 50px;
+  }
+
+  #button-mobile{
+    margin-top: -10px;
+  }
+
+  .corpo-imagem {
+    flex-direction: column;
+  }
+
+  .corpo-imagem img{
+    width: 300px;
+  }
+
+  .cartoes-img{
+    width: 300px;
+  }
+
+  .app-img img{
+    width: 500px;
+  }
+
+  .app-text{
+    padding: 25px;
+  }
+
+  .navigation-mobile{
+    padding: 80px;
+  }
+
+
 
 }
 
@@ -817,10 +982,113 @@ footer {
   }
 
   .img-nav img{
-    width: 30%;
+    width: 35%;
     padding: 10px;
 
-    }
+  }
+
+  .banner{
+    padding: 50px;
+  }
+
+  #button-mobile{
+    margin-top: -10px;
+  }
+
+  .corpo-imagem {
+    flex-direction: column;
+  }
+
+  .corpo-imagem img{
+    width: 300px;
+  }
+
+  .cartoes-img{
+    width: 300px;
+  }
+
+  .app-img img{
+    width: 300px;
+  }
+
+  .app-text{
+    padding: 25px;
+  }
+
+   .canais-gt{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .button-pt{
+    height: auto;
+    width: 350px;
+  }
+
+  .debito-ic{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-fundo{
+    flex-direction: column;
+  }
+
+  .button-pr{
+    flex-direction: column;
+  }
+
+  .navegation{
+    display: none;
+  }
+
+  .acordos-ic{
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .cartoes{
+    flex-direction: column;
+  }
+
+  .img-nav img{
+    width: 35%;
+    padding: 10px;
+
+  }
+
+  .banner{
+    padding: 50px;
+  }
+
+  #button-mobile{
+    margin-top: -10px;
+  }
+
+  .corpo-imagem {
+    flex-direction: column;
+  }
+
+  .corpo-imagem img{
+    width: 300px;
+  }
+
+  .cartoes-img{
+    width: 300px;
+  }
+
+  .app-img img{
+    width: 500px;
+  }
+
+  .app-text{
+    padding: 25px;
+  }
+
+  .navigation-mobile{
+    padding: 50px;
+  }
 
 
 }
