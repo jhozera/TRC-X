@@ -866,9 +866,33 @@ footer {
   }
 
   .img-nav img{
-    width: 30%;
+    width: 35%;
     padding: 10px;
 
-    }
+  }
+
+  .banner{
+    padding: 50px;
+  }
+
+  #button-mobile{
+    margin-top: -10px;
+  }
+
+  .corpo-imagem {
+    flex-direction: column;
+  }
+
+  .corpo-imagem img{
+    width: 300px;
+  }
+
+  .cartoes-img{
+    width: 300px;
+  }
+
+  .app-img img{
+    width: 500px;
+  }
 
 }
