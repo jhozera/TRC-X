@@ -895,4 +895,8 @@ footer {
     width: 500px;
   }
 
+  .app-text{
+    padding: 25px;
+  }
+
 }
