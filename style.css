@@ -243,7 +243,7 @@ input:checked + .slider:before {
   gap: 30px;
   font-family: 'Montserrat', Arial, sans-serif;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   padding: 20px;
   text-align: left;
 }
@@ -885,6 +885,9 @@ footer {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.app-text p{
+  font-size: 25px;
+}
 
 @media (min-width: 1025px)  {
 
@@ -894,6 +897,11 @@ footer {
 
   .canais-gt{
     flex-wrap: wrap;
+  }
+
+
+  .mobile {
+    display: none;
   }
 
 }
@@ -1046,6 +1054,13 @@ footer {
     padding: 80px;
   }
 
+  .desk{
+    display: none;
+  }
+  
+  .mobile {
+    width: 430px;
+  }
 
 
 }
@@ -1199,6 +1214,14 @@ footer {
     padding: 50px;
   }
 
+  .desk{
+    display: none;
+  }
+  
+  .mobile {
+    width: 430px;
+  }
+
 
 }
 
@@ -1272,12 +1295,17 @@ footer {
     width: 300px;
   }
 
-  .app-text{
-    padding: 30px;
-  }
-
   .navigation-mobile {
     padding: 10px;
 }
+
+.desk{
+  display: none;
+}
+
+.mobile {
+  width: 430px;
+}
+
 
 }
