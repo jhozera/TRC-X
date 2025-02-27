@@ -1229,11 +1229,6 @@ footer {
 
 @media (max-width: 480px){
 
-
-  body{
-    overflow-x: hidden;
-  }
-
   .canais-gt{
     flex-direction: column;
     height: auto;
