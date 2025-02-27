@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste SOAP</title>
+</head>
+<body>
+  <div id="result"></div>
+  <script type="module">
+const url = "https://cors-anywhere.herokuapp.com/http://192.168.1.59:8105/SOAP?service=CSLogService";
+
+const myHeaders = new Headers();
+myHeaders.append("Content-Type", "text/xml; charset=utf-8");
+myHeaders.append("SOAPAction", "\"urn:DWLibrary-CSLogService#buscaContratoPorCPFCNPJ\"");
+
+const raw = "<soapenv:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:urn=\"urn:DWLibrary-CSLogService\">\r\n  <soapenv:Header/>\r\n  <soapenv:Body>\r\n   <urn:buscaContratoPorCPFCNPJ soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\r\n     <login>ws.cslog</login>\r\n     <senha>@951ytz</senha>\r\n     <cpfcnpj> 38459726000160</cpfcnpj>\r\n   </urn:buscaContratoPorCPFCNPJ>\r\n  </soapenv:Body>\r\n</soapenv:Envelope>\r\n";
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: raw,
+  redirect: "follow",
+  mod: 'cors'
+};
+
+try {
+  const response = await fetch(url, requestOptions);
+  
+  if (response.ok) {
+    const result = await response.text();  
+    console.log(result);  
+  } else {
+    console.error('Erro na requisição:', response.status, response.statusText);
+  }
+} catch (error) {
+  console.error("Erro na requisição:", error);
+}
+
+  </script>
+</body>
+</html>
