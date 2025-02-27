@@ -1231,7 +1231,7 @@ footer {
 
 
   body{
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .canais-gt{
