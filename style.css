@@ -80,10 +80,10 @@ body {
   max-width: 300px;
   max-height: 300px;
   background: radial-gradient(circle, 
-      rgba(255,  213,  0, 0.8) 20%, 
-      rgba(  24,  53,  83, 0.6) 40%, 
-      rgba(128, 0, 128, 0.5) 60%, 
-      rgba(255,  213,  0, 0.8) 100%);
+      rgba(  244  244  244) 20%, 
+      rgba(  36  36  36) 40%, 
+      rgba( 244  244  244) 20%, 
+      rgba( 162  166  169) 100%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -100,11 +100,11 @@ body {
 }
 
 
-.title-banner h1{
+/* .title-banner h1{
   background: linear-gradient(90deg, #d7605f, #feba4c, #faf1f1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .button-banner{
   background-color: white;
@@ -257,7 +257,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 20px;
   gap: 40px;
 }
 
@@ -285,6 +285,7 @@ input:checked + .slider:before {
   font-family: 'Montserrat', Arial, sans-serif;
   color: white;
   font-size: 25px;
+  padding: 15px;
 
 }
 
@@ -643,24 +644,36 @@ footer {
 }
 
 .light-mode .banner::after {
-  content: "";
-  position: absolute;
-  width: 50vw;  
-  height: 50vw;  
-  max-width: 300px;
-  max-height: 300px;
-  background: radial-gradient(circle, 
-      rgba(248, 207, 0, 0) 20%, 
-      rgba(24, 53, 83, 0.6) 40%, 
-      rgba(128, 0, 128, 0.5) 60%, 
-      rgba(255, 213, 0, 0.8) 100%);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur(60px);
-  z-index: -1;
-  animation: circulo 5s infinite alternate ease-in-out;
-  filter: blur(60px) !important;
+  display: none;
+}
+
+.light-mode #button-ft{
+  background-color: #FFFFFF;
+}
+
+.light-mode .button-ti{
+  color: #000000;
+}
+
+.light-mode .button-pt{
+  background-color: #242424;
+}
+
+.light-mode .txt-bu-ti {
+  color: rgba(244 244 244);
+ }
+
+ .light-mode .txt-button{
+  color: rgba(244 244 244);
+
+ }
+
+.light-mode #bt3{
+  color: #fff;
+}
+
+.light-mode footer{
+  background-color: #242424;
 }
 
 
@@ -692,6 +705,101 @@ footer {
 .light-mode input:checked + .slider:before {
     outline-color: #B0B0B0;
 }
+
+.light-mode .corpo-pr {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.light-mode .corpo-text {
+  color: #121212;
+}
+
+.light-mode .acordos-ic {
+  color: #121212;
+}
+
+.light-mode .app {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.light-mode .app-text {
+  color: #121212;
+}
+
+.light-mode .app-img img {
+  filter: invert(100%) brightness(100%) contrast(100%);
+}
+
+.light-mode .debit-ic {
+  color: #121212;
+}
+
+.light-mode .debit-tt p {
+  color: #121212;
+}
+
+.light-mode .debit-tt {
+  background-color: #f9f9f9;
+}
+
+.light-mode .chat {
+  background-color: #242424;
+  color: #121212;
+}
+
+.light-mode .chat a {
+  color: #feba4c;
+}
+
+.light-mode .canais-title h1 {
+  color: #121212;
+}
+
+
+.light-mode .toggle-button {
+  background: #007bb5;
+}
+
+.light-mode .toggle-button:hover {
+  background: #00AEEF;
+}
+
+.light-mode .hidden-content {
+  background: #f4f4f4;
+  color: #121212;
+}
+
+.light-mode .navigation-mobile {
+  background-color: #f9f9f9;
+}
+
+.light-mode .navegation-button a {
+  color: #121212;
+}
+
+.light-mode #menu {
+  background: #ffffff;
+  color: #121212;
+}
+
+.light-mode #menu a {
+  color: #121212;
+}
+
+.light-mode #menu a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .img-nav img {
+  filter: invert(100%) brightness(100%) contrast(100%);
+}
+
+.light-mode .navegation-button {
+  color: #121212;
+}
+
 
 
 .navigation-mobile{
@@ -762,6 +870,7 @@ footer {
   padding-top: 50px; 
   font-family: "Montserrat", serif;
 }
+
 
 #menu a {
   text-decoration: none;
