@@ -1060,9 +1060,9 @@ footer {
   }
   
   .mobile {
-    width: 430px;
+    width: 300px;
   }
-
+  
 
 }
 
@@ -1220,14 +1220,16 @@ footer {
   }
   
   .mobile {
-    width: 430px;
+    width: 300px;
   }
+  
 
 
 }
 
 
 @media (max-width: 480px){
+
 
   .canais-gt{
     flex-direction: column;
@@ -1305,7 +1307,7 @@ footer {
 }
 
 .mobile {
-  width: 430px;
+  width: 300px;
 }
 
 .app-text{
