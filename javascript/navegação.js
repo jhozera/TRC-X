@@ -48,14 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    ScrollReveal().reveal('.banner', { 
-        duration: 1000,  
-        origin: 'top', 
+ document.addEventListener("DOMContentLoaded", function () {
+  ScrollReveal().reveal('.banner', { 
+     duration: 1000,  
+      origin: 'top', 
         distance: '50px', 
         delay: 200, 
         easing: 'ease-in-out', 
-        reset: true 
+      reset: true 
     });
 });
 

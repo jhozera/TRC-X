@@ -132,6 +132,7 @@ body {
   width: 3.5em;
   height: 2em;
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .switch input {
@@ -800,6 +801,13 @@ footer {
   color: #121212;
 }
 
+.light-mode #button-mobilefechar{
+  color: #000000;
+}
+
+.light-mode #button-mobile{
+  color: #000000;
+}
 
 
 .navigation-mobile{
@@ -1052,7 +1060,11 @@ footer {
   }
 
   .navigation-mobile{
-    padding: 80px;
+    padding: 25px;
+  }
+
+  .img-nav img{
+    width: 170px;
   }
 
   .desk{
@@ -1212,7 +1224,7 @@ footer {
   }
 
   .navigation-mobile{
-    padding: 50px;
+    padding: 25px;
   }
 
   .desk{
@@ -1238,7 +1250,7 @@ footer {
 
   .button-pt{
     height: auto;
-    width: 350px;
+    width: 320px;
   }
 
   .debito-ic{
