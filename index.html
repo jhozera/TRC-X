@@ -28,29 +28,29 @@
             </label>
         </nav>
         <div class="topnav">
-            <img src="./imagem/C6 BANK X.png" style="width: 25%;">
-            <div id="myLinks">
-                <a href="#news">Venha nós conhecer</a>
-                <a href="#contact">TRC Taborda parceiro autorizada</a>
-                <a href="#about">Parceiros</a>
-                <p>Modo:</p>
-                <label class="switchh" id="theme-toggle">
-                    <input type="checkbox" id="theme-checkboxx">
-                    <span class="sliderr">
-                        <svg class="sliderr-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation">
-                            <path fill="none" d="m4 16.5 8 8 16-16"></path>
-                        </svg>
-                    </span>
-                </label>
-            </div>
+            <img src="./imagem/C6 BANK X.png" style="width: 30%;">
             <div class="menu-container">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰
-                    <i class="fa fa-bars"></i>
-                </a>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">☰</a>
             </div>
         </div>
         
-        <div class="banner">
+        <div id="myLinks" class="menu-sidebar">
+            <a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">×</a>
+            <a href="#news">Venha nos conhecer</a>
+            <a href="#contact">TRC Taborda parceiro autorizado</a>
+            <a href="#about">Parceiros</a>
+            <p>Modo:</p>
+            <label class="switchh" id="theme-toggle">
+                <input type="checkbox" id="theme-checkboxx">
+                <span class="sliderr">
+                    <svg class="sliderr-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation">
+                        <path fill="none" d="m4 16.5 8 8 16-16"></path>
+                    </svg>
+                </span>
+            </label>
+        </div>
+        
+                <div class="banner">
             <div class="banner-fundo">
              <div class="title-banner">
                 <h1>Venha negociar com as melhores opções do mercado</h1>
