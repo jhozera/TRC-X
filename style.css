@@ -1209,7 +1209,9 @@ input:checked + .sliderr:before {
 
   .corpo-imagem {
     flex-direction: column;
+    padding: 50px;
   }
+
 
   .corpo-imagem img{
     width: 300px;
@@ -1235,9 +1237,7 @@ input:checked + .sliderr:before {
     width: 170px;
   }
 
-  .desk{
-    display: none;
-  }
+  
   
   .mobile {
     width: 300px;
@@ -1250,6 +1250,11 @@ input:checked + .sliderr:before {
   .mobile{
     display: none;
   }
+
+  .corpo-pr{
+    padding: 20px;
+    margin: 10px;
+   }
   
 
 }
@@ -1257,6 +1262,12 @@ input:checked + .sliderr:before {
 
 @media (max-width: 768px){
 
+   .corpo-pr{
+    padding: 20px;
+    margin: 10px;
+   }
+
+    
   .canais-gt{
     flex-direction: column;
     height: auto;
@@ -1381,6 +1392,7 @@ input:checked + .sliderr:before {
 
   .corpo-imagem {
     flex-direction: column;
+    padding: 50px;
   }
 
   .corpo-imagem img{
@@ -1407,7 +1419,7 @@ input:checked + .sliderr:before {
     display: none;
   }
   
-  .mobile {
+  .app-img-mobile {
     width: 300px;
   }
   
