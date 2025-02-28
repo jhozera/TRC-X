@@ -72,14 +72,6 @@ body {
 
 }
 
-.app-img-mobile{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
 .banner::after {
   content: "";
   position: absolute;
@@ -122,6 +114,12 @@ body {
   align-content: center;
 
 
+}
+
+.app-img-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button a{
@@ -642,6 +640,11 @@ footer {
 
 .light-mode .invert {
   filter: invert(100%) brightness(100%) contrast(100%);
+}
+
+.light-mode .mobile{
+  filter: invert(100%) brightness(100%) contrast(100%);
+
 }
 
 
