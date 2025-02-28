@@ -1,19 +1,8 @@
-document.getElementById("button-mobile").onclick = function() {
-    let menu = document.getElementById("menu");
-
-    if (menu.style.display === "none") {
-        menu.style.display = "block";  
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
     } else {
-        menu.style.display = "none"; 
+      x.style.display = "block";
     }
-}
-
-document.getElementById("button-mobilefechar").onclick = function() {
-    let menu = document.getElementById("menu");
-
-    if (menu.style.display === "none") {
-        menu.style.display = "block";  
-    } else {
-        menu.style.display = "none";  
-    }
-}
+  }
