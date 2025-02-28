@@ -310,8 +310,9 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
-  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(90deg, #d7605f, #feba4c, #d7605f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  font-family: 'Montserrat', Arial, sans-serif;
   font-size: 25px;
   gap: 150px;
   padding: 100px;
