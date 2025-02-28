@@ -116,6 +116,10 @@ body {
 
 }
 
+.button a{
+  text-decoration: none;
+}
+
 .button-banner a{
   font-size: 25px;
   color: #121212;
