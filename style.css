@@ -281,7 +281,7 @@ input:checked + .slider:before {
   gap: 30px;
   font-family: 'Montserrat', Arial, sans-serif;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   padding: 20px;
   text-align: left;
 }
