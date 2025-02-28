@@ -32,10 +32,32 @@ body {
     justify-content: center;
     width: 100%;
     height: 80px;
-    background-color: #121212;
+    background-color: rgb(18 18 18 / 50%);
     gap: 50px;
-    background: transparent;
+    position: fixed;
+    z-index: 1000;
 }
+
+.button a:hover::after{
+  width: 100%;
+
+}
+
+.button a:hover{
+  color: #c99c08;
+
+}
+
+.light-mode .button a:hover::after{
+  width: 100%;
+}
+
+.light-mode .button a:hover{
+  color: #f3bd0a;
+}
+
+
+
 
 .button{
     display: flex;
@@ -110,7 +132,7 @@ body {
   background-color: white;
   width: 250px;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 45px;
   align-content: center;
 
 
@@ -133,6 +155,11 @@ body {
   text-align: center;
   text-decoration: none;
 
+}
+
+.button-banner:hover{
+  transition: 2s;
+  background-color: #ffcc00;
 }
 
 .switch {
@@ -254,7 +281,7 @@ input:checked + .slider:before {
   gap: 30px;
   font-family: 'Montserrat', Arial, sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   padding: 20px;
   text-align: left;
 }
@@ -301,7 +328,7 @@ input:checked + .slider:before {
 }
 
 .corpo-cartext h3{
-  font-size: 35px;
+  font-size: 40px;
   background: linear-gradient(90deg, #d7605f, #feba4c, #faf1f1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -323,9 +350,9 @@ input:checked + .slider:before {
   background: linear-gradient(90deg, #d7605f, #feba4c, #d7605f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 25px;
+  font-size: 40px;
   gap: 150px;
-  padding: 100px;
+  padding: 75px;
   height: auto;
 
 }
@@ -335,7 +362,7 @@ input:checked + .slider:before {
   align-items: center;
   flex-direction: column;
   height: auto;
-  padding: 20px;
+  padding: 75px;
 }
 
 .app-corpo{
@@ -358,7 +385,12 @@ input:checked + .slider:before {
   gap: 20px;
   font-family: 'Montserrat', Arial, sans-serif;
   color: #fff;
-  font-size: 35px;
+  font-size: 40px;
+}
+
+
+.app-text h5{
+  font-size: 40px;
 }
 
 .app-img img{
@@ -392,7 +424,7 @@ input:checked + .slider:before {
 }
 
 .debito-tt img{
-  width: 10%;
+  width: 20%;
 }
 
 .debito-tt p{
@@ -410,7 +442,7 @@ input:checked + .slider:before {
 
 .debito-title{
   color: #fff;
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Montserrat', Arial, sans-serif;
 
 }
@@ -468,14 +500,14 @@ input:checked + .slider:before {
 .canais-title h1{
   color: #faf1f1;
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .button-pt {
   color: rgb(0, 0, 0);
   background: #faf1f1;
   border: none;
-  border-radius: 20px;
+  border-radius: 45px;
   width: 800px;
   margin-top: 20px;
   text-align: left;
@@ -484,9 +516,10 @@ input:checked + .slider:before {
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
-.txt-button {
+.txt-button strong {
   font-size: 20px;
   font-family: sans-serif;
+  font-weight: 200;
 }
 
 .txt-bu-ti {
@@ -524,7 +557,7 @@ input:checked + .slider:before {
 }
 
 footer {
-  background: #121212;
+  background: #242424;
   color: #fff;
   padding: 40px 20px;
   font-family: 'Arial', sans-serif;
@@ -535,6 +568,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
+  text-align: center;
   margin: auto;
   padding-bottom: 20px;
 }
@@ -572,6 +606,7 @@ footer {
 
 .footer-logos {
   display: flex;
+  justify-content: center;
   gap: 15px;
   align-items: center;
 }
@@ -649,7 +684,7 @@ footer {
 
 
 .light-mode .navegation {
-    background-color: transparent;
+  background-color: rgba(182, 175, 175, 0.5);
 }
 
 .light-mode .button a {
@@ -921,6 +956,7 @@ footer {
   width: 100%;
   padding: 10px 20px;
   position: relative;
+  
 }
 
 .menu-container {
