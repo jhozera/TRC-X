@@ -119,6 +119,7 @@ body {
     font-size: 25px;   
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 15px;
+    text-align: left;
 }
 
 
@@ -1131,6 +1132,9 @@ input:checked + .sliderr:before {
     display: none;
   }
   
+  .corpo-pr{
+    margin-top: -200px;
+  }
   
 }
 
