@@ -898,11 +898,20 @@ footer {
 }
 
 
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #121212;
-  position: relative;
+  /* position: relative; */
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .topnav #myLinks {
@@ -938,9 +947,6 @@ footer {
 .topnav a.icon {
   content: "";
   display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
   font-size: 20px;
 
 }
