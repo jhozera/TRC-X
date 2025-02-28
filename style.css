@@ -1252,9 +1252,9 @@ input:checked + .sliderr:before {
   }
 
   .corpo-pr{
+    margin: 0;
     padding: 20px;
-    margin: 10px;
-   }
+  }
   
 
 }
@@ -1262,10 +1262,10 @@ input:checked + .sliderr:before {
 
 @media (max-width: 768px){
 
-   .corpo-pr{
+  .corpo-pr{
+    margin: 0;
     padding: 20px;
-    margin: 10px;
-   }
+  }
 
     
   .canais-gt{
@@ -1516,6 +1516,11 @@ input:checked + .sliderr:before {
 .app-text{
   margin:15px;
   ;
+}
+
+.corpo-pr{
+  margin: 0;
+  padding: 20px;
 }
 
 
