@@ -281,7 +281,7 @@ input:checked + .slider:before {
   gap: 30px;
   font-family: 'Montserrat', Arial, sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   padding: 20px;
   text-align: left;
 }
@@ -1572,6 +1572,10 @@ input:checked + .sliderr:before {
 .corpo-pr{
   margin: 0;
   padding: 20px;
+}
+
+.corpo-text{
+  font-size: 25px;
 }
 
 
